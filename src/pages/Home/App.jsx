@@ -26,7 +26,7 @@ function App() {
     < div className="App" >
 
       <main>
-        <Banner />
+        <Banner title={"Chez vous, partout et ailleurs"} />
         <section className='card-grid'>
           {
             logements.map((logement) =>
