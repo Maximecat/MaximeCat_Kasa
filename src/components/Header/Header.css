@@ -1,0 +1,30 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 100px;
+}
+
+.logo-kasa-rouge {
+    margin-top: 40px;
+    margin-bottom: 63px;
+}
+
+.header-choice {
+    display: flex;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 142.6%;
+    background-color: white;
+}
+
+.link-pages {
+    margin-top: 57px;
+    padding-left: 57px;
+    text-decoration: none;
+    color: #FF6060;
+}
+
+.link-pages:hover {
+    text-decoration: 2px red underline;
+}
