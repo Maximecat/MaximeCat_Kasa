@@ -6,7 +6,12 @@
     background-size: cover;
 }
 
+.card a {
+    text-decoration: none;
+}
+
 .card-title {
+    font-family: 'Montserrat', sans-serif;
     width: 300px;
     margin-top: auto;
     margin-bottom: 20px;
