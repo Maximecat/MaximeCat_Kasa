@@ -12,14 +12,8 @@ html,
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-
 #root {
-  max-width: 1440px;
-  width: unset;
+  width: 1440px;
   height: auto;
   margin: auto;
 }
@@ -27,3 +21,10 @@ code {
 main {
   margin: 0 100px;
 }
+
+
+/* 
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+} */
