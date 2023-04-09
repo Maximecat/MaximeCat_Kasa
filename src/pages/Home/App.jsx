@@ -26,11 +26,11 @@ function App() {
     < div className="App" >
 
       <main>
-        <Banner title={"Chez vous, partout et ailleurs"} />
+        <Banner title={"Chez vous, partout et ailleurs"} backgroundUrl={"background-banner.png"} />
         <section className='card-grid'>
           {
             logements.map((logement) =>
-              <Link to={`/housing/${logement.id}`}>
+              <Link to={`/housing/${logement.id}`} className='links-housing'>
                 <Thumb imageUrl={logement.cover} title={logement.title}></Thumb>
               </Link>
             )
