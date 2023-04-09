@@ -6,7 +6,9 @@ function Dropdown({ title, content }) {
 
     return (
         <>
-            <div className="dropdown" onClick={() => setIsOpen(isOpen ? false : true)}>{title}</div>
+            <div className="dropdown" onClick={() => setIsOpen(isOpen ? false : true)}>{title}
+                <i className="fa-regular fa-angle-down"></i>
+            </div >
             <div>
                 {
                     Array.isArray(content) ?
