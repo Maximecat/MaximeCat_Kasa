@@ -1,0 +1,76 @@
+.logement-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* Logement : Title, Location, Tags */
+.logement-title {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 142.6%;
+    margin-top: 30px;
+    margin-bottom: 0px;
+    color: #FF6060;
+}
+
+.logement-location {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 142.6%;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    color: #FF6060;
+}
+
+.logement-tags {
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Logement Owner : Picture and Name */
+.logement-owner {
+    display: flex;
+    text-align: end;
+    justify-content: end;
+}
+
+.owner-name {
+    width: 110px;
+    height: 53px;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    line-height: 142.6%;
+    font-weight: 500;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 33px;
+    margin-right: 10px;
+    color: #FF6060;
+}
+
+.owner-photo {
+    width: 64px;
+    height: 64px;
+    margin-top: 24px;
+    margin-bottom: 27px;
+    border-radius: 50px;
+}
+
+/* Logement : Rating */
+
+.logement-rating {
+    text-align: end;
+}
+
+/* Logement : Dropdowns */
+.logement-page-dropdowns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 75px;
+    margin-bottom: 50px;
+}
