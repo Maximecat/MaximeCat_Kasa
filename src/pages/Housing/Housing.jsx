@@ -1,24 +1,22 @@
 import './Housing.css';
-import { useState } from 'react';
+import { useCallback, useState } from 'react';
 import { useEffect } from 'react';
 import { useParams, useNavigate } from "react-router-dom";
 import Tag from '../../components/Tag/Tag';
 import Dropdown from '../../components/Dropdown/Dropdown';
-import Banner from '../../components/Banner/Banner';
-// import RedStar from '../../components/Rating/RedStar';
-// import GreyStar from '../../components/Rating/GreyStar';
-// import Slider from '../../components/Slider/Slider'
+import Host from '../../components/Host/Host';
+import Rating from '../../components/Rating/Rating';
+import Slider from '../../components/Slider/Slider'
 
 function Housing() {
+
     const [logement, setLogement] = useState(null)
     const { id } = useParams()
     const navigate = useNavigate()
 
-    useEffect(() => {
-        getDatas()
-    }, [])
 
-    async function getDatas() {
+
+    const getDatas = useCallback(async () => {
         let url = "http://localhost:3000/logements.json"
         const response = await fetch(url)
         const datas = await response.json()
@@ -28,14 +26,17 @@ function Housing() {
         } else {
             navigate("/logement-non-trouve")
         }
-    }
+    }, [id, navigate])
+
+    useEffect(() => {
+        getDatas()
+    }, [getDatas])
 
     return (
         <>
             {
                 logement && <main>
-                    <Banner title={"CARROUSEL"}></Banner>
-                    {/* <Slider></Slider> */}
+                    <Slider pictures={logement.pictures} />
                     <div className='logement-page'>
                         <div className='logement-content'>
                             <div className='logement-informations-and-tags'>
@@ -44,29 +45,24 @@ function Housing() {
                                 <div className='logement-tags'>
                                     {
                                         logement.tags.map((tag) =>
-                                            <Tag tagName={tag}></Tag>
+                                            <Tag tagName={tag} />
                                         )
                                     }
                                 </div>
                             </div>
                             <div className='logement-owner-and-rating'>
-                                <div className='logement-owner'>
-                                    <h3 className='owner-name'>{logement.host.name}</h3>
-                                    <img className='owner-photo' src={logement.host.picture} alt="owner-profil" />
-                                </div>
+                                <Host name={logement.host.name} picture={logement.host.picture} />
                                 <div className='logement-rating'>
-                                    {
-                                        // console.log(Number(logement.rating))
-                                    }
+                                    <Rating rating={logement.rating} max={5} />
                                 </div>
                             </div>
                         </div>
                         <div className='logement-page-dropdowns'>
                             <div>
-                                <Dropdown title={"Description"} content={logement.description}></Dropdown>
+                                <Dropdown title={"Description"} content={logement.description} />
                             </div>
                             <div>
-                                <Dropdown title={"Équipements"} content={logement.equipments}></Dropdown>
+                                <Dropdown title={"Équipements"} content={logement.equipments} />
                             </div>
                         </div>
                     </div>
