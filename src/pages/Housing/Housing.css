@@ -36,7 +36,7 @@
 .logement-owner {
     display: flex;
     text-align: end;
-    justify-content: end;
+    justify-content: flex-end;
 }
 
 .owner-name {
