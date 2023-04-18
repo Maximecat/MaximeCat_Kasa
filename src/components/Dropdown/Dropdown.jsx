@@ -1,26 +1,36 @@
 import { useState } from "react";
 import './Dropdown.css'
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
 
 function Dropdown({ title, content }) {
     const [isOpen, setIsOpen] = useState(false)
 
     return (
         <>
-            <div className="dropdown" onClick={() => setIsOpen(isOpen ? false : true)}>{title}
-                <i className="fa-regular fa-angle-down"></i>
-            </div >
-            <div>
+            <div className="dropdown" onClick={() => setIsOpen(isOpen ? false : true)}>
+                {title}
                 {
-                    Array.isArray(content) ?
-                        <ul className="dropdown-content">
-                            {
-                                content.map((contentValue) => <li className="dropdown-list-elements">{contentValue}</li>)
-                            }
-                        </ul>
+                    isOpen ? <FontAwesomeIcon className="icon-arrow-up" icon={faAngleUp} />
                         :
-                        <p className="dropdown-content">{content}</p>
+                        <FontAwesomeIcon className="icon-arrow-down" icon={faAngleDown} />
                 }
             </div>
+            {
+                isOpen &&
+                <div className="dropdown-content">
+                    {
+                        Array.isArray(content) ?
+                            <ul>
+                                {
+                                    content.map((contentValue) => <li className="dropdown-list-elements">{contentValue}</li>)
+                                }
+                            </ul>
+                            :
+                            <p>{content}</p>
+                    }
+                </div>
+            }
         </>
     )
 }
