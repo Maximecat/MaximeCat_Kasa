@@ -18,8 +18,7 @@ header {
 
 .link-pages {
     font-family: 'Montserrat', sans-serif;
-    margin-top: 57px;
-    padding-left: 57px;
+    margin: 57px 0px 67px 57px;
     text-decoration: none;
     color: #FF6060;
 }
