@@ -1,11 +1,12 @@
 .tag {
     width: fit-content;
-    padding: 3px 22px 2px;
-    background: #FF6060;
-    color: white;
+    padding: 3px 31px 2px;
+    margin-right: 10px;
     font-style: normal;
     font-weight: 500;
     font-size: 14px;
     line-height: 142.6%;
     border-radius: 10px;
+    background: #FF6060;
+    color: white;
 }
