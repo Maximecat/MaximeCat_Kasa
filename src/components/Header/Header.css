@@ -1,12 +1,9 @@
 header {
     display: flex;
+    height: 68px;
     justify-content: space-between;
-    margin: 0 100px;
-}
-
-.logo-kasa-rouge {
+    margin: 0 100px 20px;
     margin-top: 40px;
-    margin-bottom: 63px;
 }
 
 .header-choice {
@@ -17,8 +14,10 @@ header {
 }
 
 .link-pages {
+    display: flex;
+    align-items: center;
     font-family: 'Montserrat', sans-serif;
-    margin: 57px 0px 67px 57px;
+    margin-left: 57px;
     text-decoration: none;
     color: #FF6060;
 }
