@@ -1,0 +1,28 @@
+.carrousel-block {
+    display: flex;
+}
+
+.img-carrousel {
+    width: 1240px;
+    height: 415px;
+    border-radius: 25px;
+    object-fit: cover;
+}
+
+.icon-arrow-left {
+    position: absolute;
+    width: 47px;
+    height: 80px;
+    top: 290px;
+    margin-left: 24px;
+    color: white;
+}
+
+.icon-arrow-right {
+    position: absolute;
+    width: 47px;
+    height: 80px;
+    top: 290px;
+    right: 137px;
+    color: white;
+}
