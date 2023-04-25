@@ -20,9 +20,26 @@
 }
 
 .owner-photo {
-    width: 64px;
-    height: 64px;
+    width: 32px;
+    height: 32px;
     margin-top: 24px;
     margin-bottom: 27px;
     border-radius: 50px;
+}
+
+@media screen and (max-device-width: 375px) {
+    .logement-owner {
+        justify-content: unset;
+    }
+
+    .owner-name {
+        margin-top: 11px;
+        margin-bottom: 0;
+        font-size: 12px;
+    }
+
+    .owner-photo {
+        margin-top: 13px;
+        margin-bottom: 0;
+    }
 }
