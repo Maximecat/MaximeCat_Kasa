@@ -32,8 +32,13 @@ function Slider({ pictures }) {
         <section className='carrousel-block'>
             <img className='img-carrousel' src={pictures[pictureIndex]} alt=''></img>
             <span className='pictures-count'>{pictureIndex + 1}/{pictures.length}</span>
-            <FontAwesomeIcon onClick={() => changePicture('left')} className='icon-arrow-left' icon={faAngleLeft} ></FontAwesomeIcon>
-            <FontAwesomeIcon onClick={() => changePicture('right')} className='icon-arrow-right' icon={faAngleRight} ></FontAwesomeIcon>
+            {
+                pictures.length > 1 &&
+                <>
+                    <FontAwesomeIcon onClick={() => changePicture('left')} className='icon-arrow-left' icon={faAngleLeft} ></FontAwesomeIcon>
+                    <FontAwesomeIcon onClick={() => changePicture('right')} className='icon-arrow-right' icon={faAngleRight} ></FontAwesomeIcon>
+                </>
+            }
         </section>
     )
 }
