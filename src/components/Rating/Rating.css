@@ -9,3 +9,17 @@
     margin-left: 15.25px;
     color: #E3E3E3;
 }
+
+@media screen and (max-device-width: 375px) {
+    .icon-red-star {
+        font-size: 14px;
+        margin-left: 0px;
+        margin-right: 7px;
+    }
+
+    .icon-grey-star {
+        font-size: 14px;
+        margin-left: 0px;
+        margin-right: 7px;
+    }
+}
