@@ -9,7 +9,7 @@ function Rating({ rating, max }) {
         <>
             {
                 maxArray.map((value, index) =>
-                    <FontAwesomeIcon className={index + 1 <= rating ? "icon-red-star" : "icon-grey-star"} icon={faStar} />)
+                    <FontAwesomeIcon key={"rating-" + index} className={index + 1 <= rating ? "icon-red-star" : "icon-grey-star"} icon={faStar} />)
             }
         </>
     )
