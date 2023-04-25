@@ -45,3 +45,42 @@
     column-gap: 75px;
     margin-bottom: 50px;
 }
+
+@media screen and (max-device-width: 375px) {
+    .logement-content {
+        display: block;
+    }
+
+    .logement-title {
+        margin-top: 15px;
+        font-size: 18px;
+    }
+
+    .logement-location {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        font-size: 14px;
+    }
+
+    .logement-tags {
+        flex-wrap: wrap;
+    }
+
+    .logement-owner-and-rating {
+        display: inline-flex;
+        width: 100%;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        height: 64px;
+    }
+
+    .logement-rating {
+        align-self: center;
+        padding-bottom: 5px;
+    }
+
+    .logement-page-dropdowns {
+        display: block;
+        margin-bottom: 70px;
+    }
+}
