@@ -7,3 +7,13 @@
     width: 1023px;
     margin: auto;
 }
+
+@media screen and (max-device-width: 375px) {
+    .About-page {
+        margin: 20px 20px 168px 20px;
+    }
+
+    .About-dropdowns {
+        width: auto;
+    }
+}
