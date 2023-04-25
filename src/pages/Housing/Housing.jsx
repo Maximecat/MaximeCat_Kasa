@@ -9,12 +9,9 @@ import Rating from '../../components/Rating/Rating';
 import Slider from '../../components/Slider/Slider'
 
 function Housing() {
-
     const [logement, setLogement] = useState(null)
     const { id } = useParams()
     const navigate = useNavigate()
-
-
 
     const getDatas = useCallback(async () => {
         let url = "http://localhost:3000/logements.json"
@@ -45,7 +42,7 @@ function Housing() {
                                 <div className='logement-tags'>
                                     {
                                         logement.tags.map((tag) =>
-                                            <Tag tagName={tag} />
+                                            <Tag key={"tag-" + tag} tagName={tag} />
                                         )
                                     }
                                 </div>
