@@ -21,7 +21,7 @@ function Dropdown({ title, content }) {
                 <div className="dropdown-content">
                     {
                         Array.isArray(content) ?
-                            <ul>
+                            <ul className="dropdown-list">
                                 {
                                     content.map((contentValue) => <li className="dropdown-list-elements">{contentValue}</li>)
                                 }
