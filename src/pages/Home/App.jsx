@@ -1,8 +1,6 @@
 import './App.css';
 import { useState } from 'react';
 import { useEffect } from 'react';
-// import Tag from '../../components/Tag/Tag';
-// import Dropdown from '../../components/Dropdown/Dropdown';
 import Banner from '../../components/Banner/Banner';
 import Thumb from '../../components/Thumb/Thumb';
 import { Link } from "react-router-dom";
