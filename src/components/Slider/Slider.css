@@ -9,6 +9,16 @@
     object-fit: cover;
 }
 
+.pictures-count {
+    position: absolute;
+    width: 1240px;
+    text-align: center;
+    margin-top: 368px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    color: white;
+}
+
 .icon-arrow-left {
     position: absolute;
     width: 47px;
@@ -25,4 +35,32 @@
     top: 290px;
     margin-left: 1165px;
     color: white;
+}
+
+@media screen and (max-device-width: 375px) {
+    .img-carrousel {
+        width: 335px;
+        height: 255px;
+        border-radius: 10px;
+    }
+
+    .pictures-count {
+        display: none;
+    }
+
+    .icon-arrow-left {
+        width: 12px;
+        height: 20px;
+        top: 210px;
+        margin-left: 6px;
+    }
+
+    .icon-arrow-right {
+        width: 12px;
+        height: 20px;
+        top: 210px;
+        left: 337px;
+        margin-right: 6px;
+        margin-left: 0;
+    }
 }
