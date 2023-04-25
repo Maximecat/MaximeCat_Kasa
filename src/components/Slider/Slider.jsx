@@ -30,8 +30,8 @@ function Slider({ pictures }) {
 
     return (
         <section className='carrousel-block'>
-            <span>{pictureIndex + 1}/{pictures.length}</span>
             <img className='img-carrousel' src={pictures[pictureIndex]} alt=''></img>
+            <span className='pictures-count'>{pictureIndex + 1}/{pictures.length}</span>
             <FontAwesomeIcon onClick={() => changePicture('left')} className='icon-arrow-left' icon={faAngleLeft} ></FontAwesomeIcon>
             <FontAwesomeIcon onClick={() => changePicture('right')} className='icon-arrow-right' icon={faAngleRight} ></FontAwesomeIcon>
         </section>
