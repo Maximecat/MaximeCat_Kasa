@@ -22,3 +22,14 @@
     font-weight: 500;
     font-size: 18px;
 }
+
+@media screen and (max-device-width: 375px) {
+    .card {
+        height: 255px;
+    }
+
+    .card-title {
+        margin-bottom: 15px;
+        font-size: 16px;
+    }
+}
