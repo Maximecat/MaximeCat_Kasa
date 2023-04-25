@@ -5,12 +5,35 @@ import { faAngleLeft, faAngleRight } from "@fortawesome/free-solid-svg-icons";
 
 function Slider({ pictures }) {
     const [pictureIndex, setPictureIndex] = useState(0)
+    const changePicture = (direction) => {
+        switch (direction) {
+            case 'left':
+                if (pictureIndex > 0) {
+                    setPictureIndex(pictureIndex - 1)
+                } else {
+                    setPictureIndex(pictures.length - 1)
+                }
+                break;
+
+            case 'right':
+                if (pictureIndex < pictures.length - 1) {
+                    setPictureIndex(pictureIndex + 1)
+                } else {
+                    setPictureIndex(0)
+                }
+                break;
+
+            default:
+                break;
+        }
+    }
 
     return (
         <section className='carrousel-block'>
+            <span>{pictureIndex + 1}/{pictures.length}</span>
             <img className='img-carrousel' src={pictures[pictureIndex]} alt=''></img>
-            <FontAwesomeIcon onClick={() => setPictureIndex(pictureIndex - 1)} className='icon-arrow-left' icon={faAngleLeft} ></FontAwesomeIcon>
-            <FontAwesomeIcon onClick={() => setPictureIndex(pictureIndex + 1)} className='icon-arrow-right' icon={faAngleRight} ></FontAwesomeIcon>
+            <FontAwesomeIcon onClick={() => changePicture('left')} className='icon-arrow-left' icon={faAngleLeft} ></FontAwesomeIcon>
+            <FontAwesomeIcon onClick={() => changePicture('right')} className='icon-arrow-right' icon={faAngleRight} ></FontAwesomeIcon>
         </section>
     )
 }
