@@ -33,3 +33,24 @@
     text-decoration-line: underline;
     color: #FF6060;
 }
+
+@media screen and (max-device-width: 375px) {
+
+    .Error-number {
+        font-size: 96px;
+        margin-top: 195px;
+    }
+
+    .Error-text {
+        height: 52px;
+        text-align: center;
+        margin: 11px 58px 133px 57px;
+        font-size: 18px;
+    }
+
+    .Error-tohome {
+        margin-top: 0;
+        margin-bottom: 235px;
+        font-size: 14px;
+    }
+}
