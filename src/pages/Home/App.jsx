@@ -28,7 +28,7 @@ function App() {
         <section className='card-grid'>
           {
             logements.map((logement) =>
-              <Link to={`/housing/${logement.id}`} className='links-housing'>
+              <Link key={"logement-" + logement.id} to={`/housing/${logement.id}`} className='links-housing'>
                 <Thumb imageUrl={logement.cover} title={logement.title}></Thumb>
               </Link>
             )
