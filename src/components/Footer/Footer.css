@@ -16,3 +16,14 @@ footer p {
     font-size: 24px;
     font-weight: 400;
 }
+
+@media screen and (max-device-width: 375px) {
+    footer {
+        padding-top: 62px;
+        padding-bottom: 62px;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
