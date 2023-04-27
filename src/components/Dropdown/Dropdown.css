@@ -1,3 +1,4 @@
+/* Dropdown box */
 .dropdown {
     z-index: 2;
     display: flex;
@@ -13,6 +14,7 @@
     border-radius: 5px;
 }
 
+/* Dropdown content box */
 .dropdown-content {
     z-index: 1;
     font-family: 'Montserrat', sans-serif;
@@ -26,10 +28,12 @@
     margin-top: -15px;
 }
 
+/* Dropdown content list */
 .dropdown-list {
     padding-left: 0;
 }
 
+/* Dropdown list elements */
 .dropdown-list-elements {
     width: max-content;
     font-weight: 400;
@@ -38,6 +42,7 @@
     list-style-type: none;
 }
 
+/* Dropdown responsive mobil */
 @media screen and (max-device-width: 375px) {
     .dropdown {
         height: 29px;
@@ -54,6 +59,7 @@
         font-size: 12px;
     }
 
+    /* Dropdown content paragraph */
     .dropdown-content p {
         margin-bottom: 0;
     }
