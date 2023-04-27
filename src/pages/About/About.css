@@ -1,13 +1,16 @@
+/* About page */
 .About-page {
     margin: 0 100px;
     margin-bottom: 200px;
 }
 
+/* About page dropdowns */
 .About-dropdowns {
     width: 1023px;
     margin: auto;
 }
 
+/* About page responsive mobil */
 @media screen and (max-device-width: 375px) {
     .About-page {
         margin: 20px 20px 168px 20px;
