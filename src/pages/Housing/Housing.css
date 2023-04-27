@@ -1,10 +1,11 @@
+/* Housing page housing content */
 .logement-content {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
 
-/* Logement : Title, Location, Tags */
+/* Housing page title */
 .logement-title {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -16,6 +17,7 @@
     color: #FF6060;
 }
 
+/* Housing page location */
 .logement-location {
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
@@ -27,18 +29,18 @@
     color: #FF6060;
 }
 
+/* Housing page box tags */
 .logement-tags {
     display: flex;
     font-family: 'Montserrat', sans-serif;
 }
 
-/* Logement : Rating */
-
+/* Housing page rating */
 .logement-rating {
     text-align: end;
 }
 
-/* Logement : Dropdowns */
+/* Housing page dropdowns */
 .logement-page-dropdowns {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -46,6 +48,7 @@
     margin-bottom: 50px;
 }
 
+/* Housing page responsive */
 @media screen and (max-device-width: 375px) {
     .logement-content {
         display: block;
@@ -66,6 +69,7 @@
         flex-wrap: wrap;
     }
 
+    /* Housing box Host and Rating */
     .logement-owner-and-rating {
         display: inline-flex;
         width: 100%;
