@@ -1,3 +1,4 @@
+/* Footer */
 footer {
     display: flex;
     flex-direction: column;
@@ -9,6 +10,7 @@ footer {
     color: white;
 }
 
+/* Footer paragraph */
 footer p {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -17,6 +19,7 @@ footer p {
     font-weight: 400;
 }
 
+/* Footer responsive mobil */
 @media screen and (max-device-width: 375px) {
     footer {
         padding-top: 62px;
