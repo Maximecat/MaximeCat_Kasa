@@ -1,7 +1,9 @@
+/* Slider box */
 .carrousel-block {
     display: flex;
 }
 
+/* Slider images */
 .img-carrousel {
     width: 1240px;
     height: 415px;
@@ -9,6 +11,7 @@
     object-fit: cover;
 }
 
+/* Slider images count */
 .pictures-count {
     position: absolute;
     width: 1240px;
@@ -19,6 +22,7 @@
     color: white;
 }
 
+/* Slider arrow left */
 .icon-arrow-left {
     position: absolute;
     width: 47px;
@@ -28,6 +32,7 @@
     color: white;
 }
 
+/* Slider arrow right */
 .icon-arrow-right {
     position: absolute;
     width: 47px;
@@ -37,6 +42,7 @@
     color: white;
 }
 
+/* Slider responsive mobil */
 @media screen and (max-device-width: 375px) {
     .img-carrousel {
         width: 335px;
