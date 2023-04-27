@@ -1,3 +1,4 @@
+/* Pages dimensions */
 body,
 html,
 #root {
@@ -22,6 +23,7 @@ main {
   margin: 0 100px;
 }
 
+/* Pages dimensions - responsive mobil */
 @media screen and (max-device-width: 375px) {
 
   html,
