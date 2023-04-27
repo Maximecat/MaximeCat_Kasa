@@ -1,9 +1,11 @@
+/* Error page */
 .Error-page {
     font-family: 'Montserrat', sans-serif;
     display: flex;
     flex-direction: column;
 }
 
+/* Error page '404' number */
 .Error-number {
     font-size: 288px;
     align-items: center;
@@ -13,6 +15,7 @@
     color: #FF6060;
 }
 
+/* Error page text */
 .Error-text {
     display: flex;
     align-items: center;
@@ -23,6 +26,7 @@
     color: #FF6060;
 }
 
+/* Error page link to home */
 .Error-tohome {
     display: flex;
     align-items: center;
@@ -34,6 +38,7 @@
     color: #FF6060;
 }
 
+/* Error page responsive mobil */
 @media screen and (max-device-width: 375px) {
 
     .Error-number {
