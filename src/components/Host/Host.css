@@ -1,10 +1,11 @@
-/* Logement Owner : Picture and Name */
+/* Host box */
 .logement-owner {
     display: flex;
     text-align: end;
     justify-content: flex-end;
 }
 
+/* Host name owner */
 .owner-name {
     width: 110px;
     height: 53px;
@@ -19,6 +20,7 @@
     color: #FF6060;
 }
 
+/* Host photo owner */
 .owner-photo {
     width: 32px;
     height: 32px;
@@ -27,6 +29,7 @@
     border-radius: 50px;
 }
 
+/* Host responsive mobil */
 @media screen and (max-device-width: 375px) {
     .logement-owner {
         justify-content: unset;
