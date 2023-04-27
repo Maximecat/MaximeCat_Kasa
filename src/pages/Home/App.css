@@ -1,7 +1,9 @@
+/* Homepage */
 .App {
     width: 1440px;
 }
 
+/* Homepage Thumb grid */
 .card-grid {
     display: grid;
     justify-items: center;
@@ -15,10 +17,12 @@
     background-color: #F6F6F6;
 }
 
+/* Homepage housing links */
 .links-housing {
     text-decoration: none;
 }
 
+/* Homepage responsive mobil */
 @media screen and (max-device-width: 375px) {
     .App {
         width: auto;
