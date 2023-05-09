@@ -1,7 +1,5 @@
 import './Host.css'
 
-
-
 function Host({ name, picture }) {
     const splitName = name.split(" ")
 
