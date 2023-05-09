@@ -2,11 +2,11 @@ import './Housing.css';
 import { useCallback, useState } from 'react';
 import { useEffect } from 'react';
 import { useParams, useNavigate } from "react-router-dom";
+import Slider from '../../components/Slider/Slider';
 import Tag from '../../components/Tag/Tag';
-import Dropdown from '../../components/Dropdown/Dropdown';
 import Host from '../../components/Host/Host';
 import Rating from '../../components/Rating/Rating';
-import Slider from '../../components/Slider/Slider'
+import Dropdown from '../../components/Dropdown/Dropdown';
 
 function Housing() {
     const [logement, setLogement] = useState(null)
