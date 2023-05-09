@@ -1,5 +1,5 @@
-import { useState } from "react";
 import './Dropdown.css'
+import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
 
@@ -23,7 +23,7 @@ function Dropdown({ title, content }) {
                         Array.isArray(content) ?
                             <ul className="dropdown-list">
                                 {
-                                    content.map((contentValue) => <li className="dropdown-list-elements">{contentValue}</li>)
+                                    content.map((contentValue) => <li key={"listelement-" + contentValue} className="dropdown-list-elements">{contentValue}</li>)
                                 }
                             </ul>
                             :
