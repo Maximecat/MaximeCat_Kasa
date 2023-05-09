@@ -1,9 +1,9 @@
 import './App.css';
 import { useState } from 'react';
 import { useEffect } from 'react';
+import { Link } from "react-router-dom";
 import Banner from '../../components/Banner/Banner';
 import Thumb from '../../components/Thumb/Thumb';
-import { Link } from "react-router-dom";
 
 function App() {
 
