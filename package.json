@@ -1,8 +1,8 @@
 {
+  "homepage": "https://maximecat.github.io/MaximeCat_Kasa",
   "name": "p11-kasa",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Maximecat.github.io/MaximeCat_Kasa",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-regular-svg-icons": "^6.4.0",
