@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/MaximeCat_Kasa/static/css/main.19fa34a0.css",
-    "main.js": "/MaximeCat_Kasa/static/js/main.d80a1cfb.js",
-    "index.html": "/MaximeCat_Kasa/index.html",
-    "main.19fa34a0.css.map": "/MaximeCat_Kasa/static/css/main.19fa34a0.css.map",
-    "main.d80a1cfb.js.map": "/MaximeCat_Kasa/static/js/main.d80a1cfb.js.map"
+    "main.css": "/p11-kasa/static/css/main.19fa34a0.css",
+    "main.js": "/p11-kasa/static/js/main.d80a1cfb.js",
+    "index.html": "/p11-kasa/index.html",
+    "main.19fa34a0.css.map": "/p11-kasa/static/css/main.19fa34a0.css.map",
+    "main.d80a1cfb.js.map": "/p11-kasa/static/js/main.d80a1cfb.js.map"
   },
   "entrypoints": [
     "static/css/main.19fa34a0.css",
