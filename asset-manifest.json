@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/Maximecat_11_20022023/static/css/main.19fa34a0.css",
+    "main.js": "/Maximecat_11_20022023/static/js/main.d80a1cfb.js",
+    "index.html": "/Maximecat_11_20022023/index.html",
+    "main.19fa34a0.css.map": "/Maximecat_11_20022023/static/css/main.19fa34a0.css.map",
+    "main.d80a1cfb.js.map": "/Maximecat_11_20022023/static/js/main.d80a1cfb.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.19fa34a0.css",
+    "static/js/main.d80a1cfb.js"
+  ]
+}
