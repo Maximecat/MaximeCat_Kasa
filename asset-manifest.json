@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/MaximeCat-Kasa/static/css/main.19fa34a0.css",
-    "main.js": "/MaximeCat-Kasa/static/js/main.d80a1cfb.js",
-    "index.html": "/MaximeCat-Kasa/index.html",
-    "main.19fa34a0.css.map": "/MaximeCat-Kasa/static/css/main.19fa34a0.css.map",
-    "main.d80a1cfb.js.map": "/MaximeCat-Kasa/static/js/main.d80a1cfb.js.map"
+    "main.css": "./https://Maximecat.github.io/MaximeCat-Kasa/static/css/main.19fa34a0.css",
+    "main.js": "./https://Maximecat.github.io/MaximeCat-Kasa/static/js/main.d80a1cfb.js",
+    "index.html": "./https://Maximecat.github.io/MaximeCat-Kasa/index.html",
+    "main.19fa34a0.css.map": "./https://Maximecat.github.io/MaximeCat-Kasa/static/css/main.19fa34a0.css.map",
+    "main.d80a1cfb.js.map": "./https://Maximecat.github.io/MaximeCat-Kasa/static/js/main.d80a1cfb.js.map"
   },
   "entrypoints": [
     "static/css/main.19fa34a0.css",
