@@ -1,5 +1,5 @@
 {
-  "homepage": "https://Maximecat.github.io/MaximeCat_Kasa",
+  "homepage": "https://Maximecat/github.io/MaximeCat_Kasa",
   "name": "p11-kasa",
   "version": "0.1.0",
   "private": true,
@@ -24,7 +24,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d dist"
   },
   "eslintConfig": {
     "extends": [
